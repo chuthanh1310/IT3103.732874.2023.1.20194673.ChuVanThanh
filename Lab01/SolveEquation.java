@@ -15,7 +15,7 @@ public class SolveEquation {
 
         if (a != 0) {
             double solution = -b / a;
-            System.out.printf("The solution is: %f!", solution);
+            System.out.printf("The solution is: %f!\n", solution);
         } else {
             if (b == 0) {
                 System.out.print("The solution is all x!");
