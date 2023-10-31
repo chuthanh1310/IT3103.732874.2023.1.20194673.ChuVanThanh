@@ -1,4 +1,4 @@
-package AimsProject;
+package Lab02;
 
 public class DigitalVideoDisc {
     private String title;
@@ -32,6 +32,11 @@ public class DigitalVideoDisc {
         this.category = category;
         this.director = director;
         this.length = length;
+        this.cost = cost;
+    }
+    public DigitalVideoDisc(String title, String category, float cost) {
+        this.title = title;
+        this.category = category;
         this.cost = cost;
     }
 

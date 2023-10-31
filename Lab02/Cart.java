@@ -1,4 +1,4 @@
-package AimsProject;
+package Lab02;
 public class Cart {
     public static final int MAX_NUMBER_ORDERED = 20;
     private DigitalVideoDisc[] itemsOrdered = new DigitalVideoDisc[MAX_NUMBER_ORDERED];
@@ -8,6 +8,7 @@ public class Cart {
         if (qtyOrdered < MAX_NUMBER_ORDERED) {
             this.itemsOrdered[qtyOrdered] = disc;
             qtyOrdered++;
+            System.out.println("Add success!");
         } else {
             System.out.println("Cart is full. Cannot add more DVDs.");
         }
@@ -18,6 +19,7 @@ public class Cart {
             if (itemsOrdered[i] != null && itemsOrdered[i].equals(disc)) {
                 itemsOrdered[i] = null;
                 qtyOrdered--;
+                System.out.println("Remove success!");
                 return; // exit method after removing the disc
             }
         }
