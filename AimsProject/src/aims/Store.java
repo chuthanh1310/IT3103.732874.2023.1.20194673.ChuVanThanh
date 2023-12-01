@@ -1,5 +1,5 @@
-
-package AimsProject;
+package aims;
+import aims.media.DigitalVideoDisc;
 public class Store {
     private DigitalVideoDisc[] itemsInStore = new DigitalVideoDisc[100];
     private int itemCount =0;
@@ -43,9 +43,4 @@ public class Store {
         return -1; // Return -1 if DVD not found
     }
 
-    // Other methods and properties can be added as needed
-
-    
 }
-
-

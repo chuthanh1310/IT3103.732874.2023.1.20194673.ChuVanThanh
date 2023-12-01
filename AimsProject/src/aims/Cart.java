@@ -1,4 +1,5 @@
-package AimsProject;
+package aims;
+import aims.media.DigitalVideoDisc;
 public class Cart {
     public static final int MAX_NUMBER_ORDERED = 20;
     private DigitalVideoDisc[] itemsOrdered = new DigitalVideoDisc[MAX_NUMBER_ORDERED];
@@ -84,4 +85,5 @@ public class Cart {
         }
         System.out.println("Not Found DVD title: "+title);
     }
+
 }

@@ -1,5 +1,6 @@
-package AimsProject;
-
+package test;
+import aims.Cart;
+import aims.media.DigitalVideoDisc;
 public class CartTest {
     public static void main (String[] args) {
 
@@ -31,5 +32,4 @@ public class CartTest {
         System.out.println("Search for a DVD with the title \"Bla\":");
         cart.isMatch("Bla");
     }
-
 }

@@ -1,5 +1,6 @@
-package AimsProject;
-
+package test;
+import aims.Store;
+import aims.media.DigitalVideoDisc;
 public class StoreTest {
     public static void main(String[] args) {
         // Example usage of the Store class
