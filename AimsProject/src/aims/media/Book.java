@@ -7,6 +7,13 @@ public class Book extends Media {
     public Book(){
         super();
     }
+    public Book(String title) {
+        super(title);
+    }
+    
+    public Book(String title, String category, float cost) {
+        super(title, category, cost);
+    }
     public void addAuthor(String authorName) {
         // Ensure that the author is not already in the List before adding
         if (!authors.contains(authorName)) {
@@ -26,10 +33,26 @@ public class Book extends Media {
             System.out.println(authorName + " is not an author of " + title);
         }
     }
-    public void printAuthors() {
-        System.out.println("Authors:");
-        for (String author : authors) {
-            System.out.println(author);
+    
+    
+    public String toString() {
+        StringBuilder builder = new StringBuilder();
+        builder.append("Book - ");
+
+        if (super.getTitle() != null) {
+            builder.append(super.getTitle());
         }
+        builder.append(" - ");
+
+        if (super.getCategory() != null) {
+            builder.append(super.getCategory());
+        }
+        builder.append(" - ");
+
+        if (super.getCost() >= 0) {
+            builder.append(String.format("%.2f $", super.getCost()));
+        }
+
+        return builder.toString();
     }
 }
