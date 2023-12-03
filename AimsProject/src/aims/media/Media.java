@@ -6,7 +6,7 @@ public abstract class Media {
     protected String category;
     protected float cost;
 
-    protected Media() {
+    public Media() {
         super();
     }
     protected Media(String title) {
